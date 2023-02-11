@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #000;
+  /* font-family: 'Noto Serif JP', serif;
+  font-family: 'Playball', cursive;
+  font-family: 'Share Tech Mono', monospace; */
+}
+
+.wrapper {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Share Tech Mono", monospace;
+  color: #fff;
+}
+
+i {
+  padding-right: 10px;
+  font-size: 5px;
+}
+
+.image img {
+  max-width: 55rem;
+  margin-top: 5rem;
+  cursor: pointer;
+   transform: scale(4);
+    z-index: 9999;
+
+    animation-name:  smallScale;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.sm_image img {
+  max-width: 10rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+
+}
+
+
+.sm_image img{
+
+     
+    animation-name:  Scale;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes smallScale {
+    
+    0%{
+        
+      opacity: 0;
+      transform:  scale(0);
+    }
+    100%{
+ 
+        opacity: 1;
+        transform: scale(1);
+
+    }
+
+}
+
+@keyframes Scale {
+    
+    0%{
+        
+     
+      transform:  scale(3);
+    }
+    100%{
+ 
+    
+        transform: scale(1);
+
+    }
+
+}
+
+
+.text {
+  color: #fff;
+  padding-left: 2rem;
+  margin-top: 7rem;
+}
+
+.heading {
+  font-size: 5rem;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 100;
+  line-height: .8;
+}
+.heading_2 {
+  font-size: 5rem;
+  font-family: "Playball", cursive;
+  text-transform: lowercase;
+}
+
+.des {
+}
+
+.writer {
+  margin: 2rem 0;
+  color: #14ff03;
+   letter-spacing: 5px;
+}
+
+.des_text{
+    font-family: 'Share Tech Mono', monospace;
+    width: 28rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    text-align: left;
+}
+
+
+
+
+
+
+/* font-family: 'Noto Serif JP', serif;
+font-family: 'Playball', cursive;
+font-family: 'Share Tech Mono', monospace; */
